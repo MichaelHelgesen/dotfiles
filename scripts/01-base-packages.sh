@@ -14,8 +14,8 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # Oppdater system
-echo "Oppdaterer pakkelister..."
-apt update
+# echo "Oppdaterer pakkelister..."
+# apt update
 
 # Grunnleggende verktøy
 echo "Installerer grunnpakker..."
