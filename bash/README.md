@@ -7,11 +7,45 @@ Min personlige bash-konfigurasjon med aliaser, prompt og historikk-oppsett.
 - `.bashrc` - Hovedkonfigurasjon med aliaser og git-aware prompt
 
 ## Installasjon
+
+### Ubuntu (laptop/VM):
 ```bash
 # Lag symlink til .bashrc
 ln -sf ~/dotfiles/bash/.bashrc ~/.bashrc
 
 # Last inn på nytt
+source ~/.bashrc
+```
+
+### Proxmox:
+```bash
+# Installer git først (hvis ikke installert):
+apt update && apt install git
+
+# Klon dotfiles:
+cd /root
+git clone https://github.com/mikke/dotfiles.git
+
+# Lag symlink:
+ln -sf /root/dotfiles/bash/.bashrc ~/.bashrc
+source ~/.bashrc
+```
+
+## Oppdatering
+
+Når du har gjort endringer i `.bashrc` (fra laptop):
+```bash
+# På laptop:
+cd ~/dotfiles
+git pull  # (hvis endret fra annen maskin)
+nano bash/.bashrc
+git add bash/.bashrc
+git commit -m "Beskrivelse av endring"
+git push
+
+# På andre maskiner (VM/Proxmox):
+cd ~/dotfiles  # eller /root/dotfiles på Proxmox
+git pull
 source ~/.bashrc
 ```
 
@@ -44,10 +78,5 @@ source ~/.bashrc
 - `gp` - git push
 - `gl` - git log (oneline graph)
 - `gd` - git diff
+- `gpl` - git pull
 
-## Tips
-
-Etter å ha endret `.bashrc`, last inn på nytt:
-```bash
-source ~/.bashrc
-```
