@@ -11,7 +11,7 @@ alias ~="cd ~"
 
 #ls-varianter
 alias ll="ls -lah"
-alias la="la -A"
+alias la="ls -A"
 alias l="ls -CF"
 
 # ============================================
