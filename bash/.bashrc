@@ -5,8 +5,8 @@
 # ALIASER - Navigasjon
 # ============================================
 alias ..="cd .."
-alias ...="../.."
-alias ....="../../../"
+alias ...="cd ../.."
+alias ....="cd ../../../"
 alias ~="cd ~"
 
 #ls-varianter
