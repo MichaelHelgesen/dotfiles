@@ -12,6 +12,7 @@ Se `dokumenter/plan.md` for planlagte implementeringer.
 
 ## Struktur
 - `bash/` - Bash-konfigurasjon
+- `nvim/` - Neovim-konfigurasjon
 - `scripts/` - Installasjonsscripts for nye maskiner
 - `dokumenter/` - Planleggingsdokumenter
 
@@ -27,6 +28,9 @@ sudo ./scripts/01-base-packages.sh
 # Sett opp bash
 ln -sf ~/dotfiles/bash/.bashrc ~/.bashrc
 source ~/.bashrc
+
+# Sett opp neovim
+ln -sf ~/dotfiles/nvim ~/.config/nvim
 ```
 
 ### Stegvis installasjon
