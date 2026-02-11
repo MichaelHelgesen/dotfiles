@@ -26,7 +26,7 @@ apt install -y \
     htop \
     tree \
     unzip \
-    vim
+    neovim
 
 echo ""
 echo "✓ Grunnpakker installert"
@@ -37,4 +37,4 @@ echo "  - curl/wget: Last ned filer"
 echo "  - htop: Prosess-monitor"
 echo "  - tree: Vis mappestruktur"
 echo "  - unzip: Pakk ut zip-filer"
-echo "  - vim: Teksteditor"
+echo "  - neovim: Teksteditor"

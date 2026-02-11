@@ -15,7 +15,7 @@ Installerer grunnleggende pakker som trengs på alle maskiner.
 - htop - Prosessovervåking
 - tree - Vis mappestruktur
 - unzip - Pakke ut filer
-- vim - Teksteditor
+- neovim - Teksteditor
 
 #### Bruk:
 
