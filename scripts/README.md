@@ -5,9 +5,11 @@ Scripts for å sette opp nye maskiner.
 ## Scripts
 
 ### 01-base-packages.sh
+
 Installerer grunnleggende pakker som trengs på alle maskiner.
 
-**Pakker:**
+#### Pakker:
+
 - git - Versjonskontroll
 - curl/wget - Last ned filer
 - htop - Prosessovervåking
@@ -15,7 +17,8 @@ Installerer grunnleggende pakker som trengs på alle maskiner.
 - unzip - Pakke ut filer
 - vim - Teksteditor
 
-**Bruk:**
+#### Bruk:
+
 ```bash
 sudo ./scripts/01-base-packages.sh
 ```

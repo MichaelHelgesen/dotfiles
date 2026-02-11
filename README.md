@@ -21,10 +21,10 @@ Se `dokumenter/plan.md` for planlagte implementeringer.
 git clone https://github.com/MichaelHelgesen/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 
-### Installer grunnpakker først
+# Installer grunnpakker først
 sudo ./scripts/01-base-packages.sh
 
-### Sett opp bash
+# Sett opp bash
 ln -sf ~/dotfiles/bash/.bashrc ~/.bashrc
 source ~/.bashrc
 ```
