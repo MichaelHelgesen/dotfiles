@@ -26,8 +26,22 @@ apt install -y \
     htop \
     tree \
     unzip \
-    neovim
+    neovim \
+    chromium \
 
+# GitHub CLI (krever eget repo)
+echo "Installerer GitHub CLI..."
+mkdir -p -m 755 /etc/apt/keyrings
+wget -nv -O /etc/apt/keyrings/githubcli-archive-keyring.gpg \
+    https://cli.github.com/packages/githubcli-archive-keyring.gpg
+chmod go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg
+
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] \
+    https://cli.github.com/packages stable main" \
+    | tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+
+apt update
+apt install -y gh
 echo ""
 echo "✓ Grunnpakker installert"
 echo ""
@@ -38,3 +52,5 @@ echo "  - htop: Prosess-monitor"
 echo "  - tree: Vis mappestruktur"
 echo "  - unzip: Pakk ut zip-filer"
 echo "  - neovim: Teksteditor"
+echo "  - chromium: Nettleser"
+echo "  - github cli: Jobbe med GitHub i terminalen"

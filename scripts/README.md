@@ -16,6 +16,8 @@ Installerer grunnleggende pakker som trengs på alle maskiner.
 - tree - Vis mappestruktur
 - unzip - Pakke ut filer
 - neovim - Teksteditor
+- chromium - Nettleser
+- github cli
 
 #### Bruk:
 
@@ -26,4 +28,4 @@ sudo ./scripts/01-base-packages.sh
 ## Rekkefølge
 
 1. `01-base-packages.sh` - Alltid først
-2. (Flere scripts kommer)
+2. `02-install-node.sh` - Ved behov
