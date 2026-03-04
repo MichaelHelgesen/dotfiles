@@ -17,6 +17,7 @@ Installerer grunnleggende pakker som trengs på alle maskiner.
 - unzip - Pakke ut filer
 - neovim - Teksteditor
 - chromium - Nettleser
+- direnv - Laste miljøvariabler
 - github cli
 
 #### Bruk:

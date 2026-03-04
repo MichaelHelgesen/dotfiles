@@ -28,6 +28,7 @@ apt install -y \
     unzip \
     neovim \
     chromium \
+    direnv \
 
 # GitHub CLI (krever eget repo)
 echo "Installerer GitHub CLI..."
@@ -53,4 +54,5 @@ echo "  - tree: Vis mappestruktur"
 echo "  - unzip: Pakk ut zip-filer"
 echo "  - neovim: Teksteditor"
 echo "  - chromium: Nettleser"
+echo "  - direnv: Laste inn og ut miljøvariabler basert på katalog"
 echo "  - github cli: Jobbe med GitHub i terminalen"

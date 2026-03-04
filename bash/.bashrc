@@ -67,3 +67,8 @@ HISTSIZE=10000
 HISTFILESIZE=20000
 HISTCONTROL=ignoreboth
 shopt -s histappend
+
+# ============================================
+# DIRENV
+# ============================================
+eval "$(direnv hook bash)"
