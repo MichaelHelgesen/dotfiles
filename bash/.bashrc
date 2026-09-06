@@ -69,6 +69,12 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # ============================================
+# .NET SDK
+# ============================================
+export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$PATH:$HOME/.dotnet:$HOME/.dotnet/tools
+
+# ============================================
 # DIRENV
 # ============================================
 eval "$(direnv hook bash)"
