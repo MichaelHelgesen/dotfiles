@@ -16,6 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   spec = {
     -- her legger vi til plugin-moduler etter hvert, f.eks:
-    -- { import = "plugins.lsp" },
+    { import = "plugins.lsp" },
+    { import = "plugins.treesitter" },
   },
 })
