@@ -29,6 +29,7 @@ apt install -y \
     neovim \
     chromium \
     direnv \
+    build-tools \
 
 # GitHub CLI (krever eget repo)
 echo "Installerer GitHub CLI..."
@@ -56,3 +57,4 @@ echo "  - neovim: Teksteditor"
 echo "  - chromium: Nettleser"
 echo "  - direnv: Laste inn og ut miljøvariabler basert på katalog"
 echo "  - github cli: Jobbe med GitHub i terminalen"
+echo "  - build-tools: Verktøy for å kompilere kildekode til kjørbare programmer"
