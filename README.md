@@ -25,6 +25,9 @@ cd ~/dotfiles
 # Installer grunnpakker først
 sudo ./scripts/01-base-packages.sh
 
+## Deretter NVIM
+sudo ./scripts/install-nvim.sh
+
 # Sett opp bash
 ln -sf ~/dotfiles/bash/.bashrc ~/.bashrc
 source ~/.bashrc

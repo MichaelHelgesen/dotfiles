@@ -26,7 +26,6 @@ apt install -y \
     htop \
     tree \
     unzip \
-    neovim \
     chromium \
     direnv \
     build-tools \

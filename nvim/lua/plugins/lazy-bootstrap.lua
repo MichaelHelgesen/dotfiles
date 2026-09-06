@@ -18,5 +18,6 @@ require("lazy").setup({
     -- her legger vi til plugin-moduler etter hvert, f.eks:
     { import = "plugins.lsp" },
     { import = "plugins.treesitter" },
+    { import = "plugins.csharp" },
   },
 })

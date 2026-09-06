@@ -10,6 +10,7 @@ return {
         ensure_installed = { "lua", "vim", "vimdoc" },
         auto_install = true,
         highlight = { enable = true },
+        disable = { "markdown" }, -- midlertidig, pga. kjent bug i nvim 0.12 + nvim-treesitter master
       })
     end,
   },
